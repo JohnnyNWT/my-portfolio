@@ -1,7 +1,11 @@
 {
-  "main.css": "static/css/main.40b4a62f.css",
-  "main.css.map": "static/css/main.40b4a62f.css.map",
-  "main.js": "static/js/main.b7f2aee8.js",
-  "main.js.map": "static/js/main.b7f2aee8.js.map",
-  "static/media/logo.svg": "static/media/logo.5d5d9eef.svg"
+  "main.css": "static/css/main.c4f86386.css",
+  "main.css.map": "static/css/main.c4f86386.css.map",
+  "main.js": "static/js/main.9365e672.js",
+  "main.js.map": "static/js/main.9365e672.js.map",
+  "static/media/bootstrap-icons.woff2?24e3eb84d0bcaf83d77f904c78ac1f47": "static/media/bootstrap-icons.7f477633.woff2",
+  "static/media/bootstrap-icons.woff?24e3eb84d0bcaf83d77f904c78ac1f47": "static/media/bootstrap-icons.52196284.woff",
+  "static/media/imagem-para-home.png": "static/media/imagem-para-home.5bf320c2.png",
+  "static/media/logo.png": "static/media/logo.1adb49f1.png",
+  "static/media/minha-foto.png": "static/media/minha-foto.27a5bd23.png"
 }
