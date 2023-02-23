@@ -6,11 +6,11 @@ class Header extends React.Component {
     return(
       <div>
         <img src={logo} alt="logo" />
-        <a>HOME</a>
-        <a>SOBRE MIM</a>
-        <a>PROJETOS</a>
-        <a>SKILLS</a>
-        <a>CONTATO</a>
+        <a href='#Home'>HOME</a>
+        <a href='#About'>SOBRE MIM</a>
+        <a href='#Projects'>PROJETOS</a>
+        <a href='#Skills'>SKILLS</a>
+        <a href='#Contact'>CONTATO</a>
       </div>
     );
   }
