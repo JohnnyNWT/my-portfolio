@@ -1,0 +1,55 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@keyframes animacao {
+  from {color: #2F363B;}
+  to {color: purple; font-size: 20px;}
+}
+
+.container-principal {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  background: hsla(0,0%,100%,.25);
+  border: 1px solid hsla(0,0%,100%,.18);
+  padding: 1rem 2rem;
+  position: fixed;
+  width: 100%;
+}
+
+.img-logo {
+  width: 170px;
+  margin-left: 8px;
+}
+
+.nav-links {
+  display: flex;
+  gap: 10px;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: #6b7688;
+}
+
+.nav-link:hover {
+  animation-name: animacao;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+}
+
+.social-links {
+  display: flex;
+  gap: 7px;
+  margin-right: 8px;
+}
+
+.social-link {
+  font-size: 26px;
+  color: #2F363B;
+}

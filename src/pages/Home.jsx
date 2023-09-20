@@ -1,6 +1,6 @@
 import React from 'react';
-import 'bootstrap-icons/font/bootstrap-icons.css'
-import imagemMacaco from '../images/imagem-para-home.png'
+import 'bootstrap-icons/font/bootstrap-icons.css';
+import imagemMacaco from '../images/imagem-para-home.png';
 
 class Home extends React.Component {
   render() {
