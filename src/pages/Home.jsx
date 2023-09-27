@@ -1,12 +1,13 @@
 import React from 'react';
+import minhaImgIA from '../images/joao-marcelo-IA.png';
 import 'bootstrap-icons/font/bootstrap-icons.css';
-import imagemMacaco from '../images/imagem-para-home.png';
+import "../css/Home.css"
 
 class Home extends React.Component {
   render() {
     return(
-      <div id='Home'>
-        <img src={imagemMacaco} alt="imagem do macaco programador" />
+      <div id='Home' className="container-home">
+        <img src={ minhaImgIA } alt="Joao Marcelo IA" className="img-home"/>
         <h1>Olá, eu sou o</h1>
         <h1>João Marcelo</h1>
         <h2>Desenvolvedor web full-stack</h2>
