@@ -4,11 +4,6 @@
   box-sizing: border-box;
 }
 
-@keyframes animacao {
-  from {color: #2F363B;}
-  to {color: purple; font-size: 20px;}
-}
-
 .container-principal {
   display: flex;
   align-items: center;
@@ -36,12 +31,27 @@
 .nav-link {
   text-decoration: none;
   color: #6b7688;
+  position: relative;
+  transition: color 0.3s ease;
+}
+
+.nav-link::before {
+  content: "";
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #800080;
+  transition: width 0.3s ease;
 }
 
 .nav-link:hover {
-  animation-name: animacao;
-  animation-duration: 1s;
-  animation-fill-mode: forwards;
+  color: #800080;
+}
+
+.nav-link:hover::before {
+  width: 100%;
 }
 
 .social-links {
