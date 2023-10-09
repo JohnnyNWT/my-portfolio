@@ -25,7 +25,7 @@
 
 .nav-links {
   display: flex;
-  gap: 10px;
+  gap: 15px;
 }
 
 .nav-link {
@@ -39,7 +39,7 @@
   content: "";
   position: absolute;
   width: 0%;
-  height: 2px;
+  height: 1px;
   bottom: 0;
   left: 0;
   background-color: #800080;
@@ -48,6 +48,9 @@
 
 .nav-link:hover {
   color: #800080;
+  -webkit-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  transform: scale(1.1);
 }
 
 .nav-link:hover::before {
@@ -56,11 +59,19 @@
 
 .social-links {
   display: flex;
-  gap: 7px;
+  gap: 10px;
   margin-right: 8px;
 }
 
 .social-link {
   font-size: 26px;
   color: #2F363B;
+}
+
+.container-info {
+  position: relative;
+  padding: 10px;
+  background: white;
+  border-radius: 0% 0% 0% 0% / 0% 0% 0% 0% ;
+  box-shadow: 5px 5px rgba(0,0,0,.15);
 }

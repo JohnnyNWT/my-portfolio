@@ -10,9 +10,8 @@ class Header extends React.Component {
         <img src={ logo } alt="logo" className="img-logo"/>
         <div className="nav-links">
           <a href='#Home' className="nav-link">HOME</a>
-          <a href='#About' className="nav-link">SOBRE MIM</a>
           <a href='#Projects' className="nav-link">PROJETOS</a>
-          <a href='#Skills' className="nav-link">SKILLS</a>
+          <a href='#Skills' className="nav-link">SKILLS</a> 
           <a href='#Contact' className="nav-link">CONTATO</a>
         </div>
         <div className="social-links">

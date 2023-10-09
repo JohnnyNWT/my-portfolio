@@ -8,15 +8,17 @@ class Home extends React.Component {
     return(
       <div id='Home' className="container-home">
         <img src={ minhaImgIA } alt="Joao Marcelo IA" className="img-home"/>
-        <h1>Olá, eu sou o</h1>
-        <h1>João Marcelo</h1>
-        <h2>Desenvolvedor web full-stack</h2>
-        <a href="https://github.com/JohnnyNWT" target="_blank">
+        <div className="container-info">
+          <h1>Olá, eu sou o</h1>
+          <h1>João Marcelo</h1>
+          <h2>Desenvolvedor web full-stack</h2>
+        </div>
+        {/* <a href="https://github.com/JohnnyNWT" target="_blank">
           <i className="bi bi-github"></i>
         </a>
         <a href="https://www.linkedin.com/in/johnnydev/" target="_blank">
           <i className="bi bi-linkedin"></i>
-        </a>
+        </a> */}
       </div>
     );
   }

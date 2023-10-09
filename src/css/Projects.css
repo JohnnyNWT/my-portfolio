@@ -1,0 +1,91 @@
+.container-projects {
+  background-color: #EEF0F2;
+  height: 100vh;
+}
+
+.head-text {
+  padding-top: 30px;
+  font-size: 2.75rem;
+  font-weight: 800;
+  text-align: center;
+  text-transform: capitalize;
+  font-family: "Poppins", sans-serif;;
+}
+
+.span-my-projects {
+  color: #800080;
+}
+
+.card {
+  margin: 0 auto;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  width: 290px;
+  height: 410px;
+  padding: 1rem;
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: space-between;
+  transition: all 0.5s ease;
+}
+
+.project-name-text {
+  font-size: 1rem;
+  font-family: "Poppins",sans-serif;
+  font-weight: 800;
+  margin-bottom: 1rem;
+}
+
+.description {
+  color: #6b7688;
+  font-size: .8rem;
+  line-height: 1.5;
+  font-family: "Poppins",sans-serif;
+}
+
+.card:hover {
+  box-shadow: 0 0 25px #800080;
+}
+
+.card:hover .img-project {
+  opacity: 0.6;
+}
+
+.card:hover .icons {
+  opacity: 1;
+}
+
+.icons {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  top: 0;
+  opacity: 0;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+  transition: all .3s ease;
+}
+
+.image-card {
+  overflow: hidden;
+  border-radius: 0.5rem;
+  height: 240px;
+  position: relative;
+  width: 100%;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+.icons-div {
+  padding: 0.5rem;
+  background-color: rgba(0, 0, 0, 0.515);
+  border-radius: 50%;
+}
