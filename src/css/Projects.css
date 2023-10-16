@@ -1,10 +1,20 @@
 .container-projects {
   background-color: #EEF0F2;
-  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.cards-container {
+  display: grid;
+  justify-content: center;
+  grid-template-columns: repeat(4, 320px);
+  grid-gap: 15px;
+  margin-bottom: 50px;
 }
 
 .head-text {
-  padding-top: 30px;
+  padding-top: 53px;
+  padding-bottom: 45px;
   font-size: 2.75rem;
   font-weight: 800;
   text-align: center;
@@ -17,7 +27,7 @@
 }
 
 .card {
-  margin: 0 auto;
+  margin: 1rem;
   border-radius: 0.5rem;
   cursor: pointer;
   width: 290px;
@@ -46,7 +56,7 @@
 }
 
 .card:hover {
-  box-shadow: 0 0 25px #800080;
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.292);
 }
 
 .card:hover .img-project {
