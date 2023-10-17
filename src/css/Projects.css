@@ -59,8 +59,12 @@
   box-shadow: 0 0 25px rgba(0, 0, 0, 0.292);
 }
 
+.img-project {
+  transition: all .3s ease;
+}
+
 .card:hover .img-project {
-  opacity: 0.6;
+  opacity: 0.5;
 }
 
 .card:hover .icons {

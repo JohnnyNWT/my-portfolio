@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import Header from './components/Header';
 import Projects from './pages/Projects';
 import Home from './pages/Home';
+import Skills from './pages/Skills';
 
 class App extends Component {
   render() {
@@ -10,6 +11,7 @@ class App extends Component {
           <Header />
           <Home />
           <Projects />
+          <Skills />
         </div>
     );
   }

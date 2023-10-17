@@ -7,7 +7,9 @@ class Header extends React.Component {
   render() {
     return(
       <div className="container-principal">
-        <img src={ logo } alt="logo" className="img-logo" style={{ cursor: "pointer" }} />
+        <a href='#Home'>
+          <img src={ logo } alt="logo" className="img-logo" style={{ cursor: "pointer" }} />
+        </a>
         <div className="nav-links">
           <a href='#Home' className="nav-link">HOME</a>
           <a href='#Projects' className="nav-link">PROJETOS</a>
