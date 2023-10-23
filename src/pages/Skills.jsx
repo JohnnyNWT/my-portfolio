@@ -28,7 +28,6 @@ class Skills extends React.Component {
                 <p className="p-text">Universidade norte do paraná (Unopar)</p>
               </div>
             </div>
-
             <div className="container-exp">
               <div className="exp-year">
                 <p className="p-exp-year">2022/2023</p>
@@ -38,7 +37,6 @@ class Skills extends React.Component {
                 <p className="p-text">Trybe</p>
               </div>
             </div>
-
             <div className="container-exp">
               <div className="exp-year">
                 <p className="p-exp-year">2022/2023</p>
@@ -48,7 +46,6 @@ class Skills extends React.Component {
                 <p className="p-text">Udemy</p>
               </div>
             </div>
-
             <div className="container-exp">
               <div className="exp-year">
                 <p className="p-exp-year">2018/2019</p>
