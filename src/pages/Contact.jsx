@@ -32,15 +32,15 @@ class Contact extends React.Component {
     return(
       <div id="Contact">
         <div className="social hidden" ref={this.contactSocialRef}>
-            <a href="https://www.linkedin.com/in/johnnydev/" target="_blank" className="social-icon">
-              <i className="bi bi-linkedin"></i>
-            </a>
-          <a href="https://github.com/JohnnyNWT" target="_blank" className="social-icon">
-            <i className="bi bi-github"></i>
+          <a href="https://www.linkedin.com/in/johnnydev/" target="_blank" className="social-icon">
+            <i className="bi bi-linkedin"></i>
           </a>
-          <a href="https://www.instagram.com/johnnynwt/" target="_blank" className="social-icon">
-            <i className="bi bi-instagram"></i>
-          </a>
+        <a href="https://github.com/JohnnyNWT" target="_blank" className="social-icon">
+          <i className="bi bi-github"></i>
+        </a>
+        <a href="https://www.instagram.com/johnnynwt/" target="_blank" className="social-icon">
+          <i className="bi bi-instagram"></i>
+        </a>
           {/* <a target="_blank" className="social-icon">
             <i className="bi bi-whatsapp"></i>
           </a> */}
