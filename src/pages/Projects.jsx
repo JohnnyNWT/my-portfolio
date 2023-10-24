@@ -6,11 +6,37 @@ import dataProjects from '../data/Projects';
 import '../css/Projects.css';
 
 class Projects extends React.Component {
+  constructor(props) {
+    super(props);
+    this.projectCardRef = React.createRef();
+    this.projectTitleRef = React.createRef();
+  }
+
+  componentDidMount() {
+    const intersectionObserver = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if(entry.isIntersecting) {
+          entry.target.classList.add('show');
+        } else {
+          entry.target.classList.remove('show');
+        }
+      })
+    });
+
+    if (this.projectCardRef.current) {
+      intersectionObserver.observe(this.projectCardRef.current);
+    }
+
+    if (this.projectTitleRef.current) {
+      intersectionObserver.observe(this.projectTitleRef.current);
+    }
+  }
+  
   render() {
     return(
       <div id='Projects' className='container-projects'>
-        <h2 className="head-text">Alguns dos <span className="span-my-projects">meus projetos</span><br/> como dev</h2>
-        <div className="cards-container">
+        <h2 ref={this.projectTitleRef} className="head-text hidden">Alguns dos <span className="span-my-projects">meus projetos</span><br/> como dev</h2>
+        <div ref={this.projectCardRef} className="cards-container hidden">
           {dataProjects.map(({srcImage, projectName, projectDescription, linkGitHubProject, linkViewProject}) => (
             <div className="card">
               <div className="image-card">

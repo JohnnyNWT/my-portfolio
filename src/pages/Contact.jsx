@@ -2,15 +2,39 @@ import React from 'react';
 import "../css/Contact.css"
 
 class Contact extends React.Component {
+  constructor(props) {
+    super(props);
+    this.contactSocialRef = React.createRef();
+    this.contactFormRef = React.createRef();
+  }
+
+  componentDidMount() {
+    const intersectionObserver = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if(entry.isIntersecting) {
+          entry.target.classList.add('show');
+        } else {
+          entry.target.classList.remove('show');
+        }
+      })
+    });
+
+    if (this.contactSocialRef.current) {
+      intersectionObserver.observe(this.contactSocialRef.current);
+    }
+
+    if (this.contactFormRef.current) {
+      intersectionObserver.observe(this.contactFormRef.current);
+    }
+  }
+
   render() {
     return(
       <div id="Contact">
-        <div className="social">
-
+        <div className="social hidden" ref={this.contactSocialRef}>
             <a href="https://www.linkedin.com/in/johnnydev/" target="_blank" className="social-icon">
               <i className="bi bi-linkedin"></i>
             </a>
-
           <a href="https://github.com/JohnnyNWT" target="_blank" className="social-icon">
             <i className="bi bi-github"></i>
           </a>
@@ -21,7 +45,7 @@ class Contact extends React.Component {
             <i className="bi bi-whatsapp"></i>
           </a> */}
         </div>
-        <section>
+        <section className="hidden" ref={this.contactFormRef}>
           <h2 className="h2-text">FALA <span className="span-my-projects">COMIGO.</span></h2>
           <form action="">
             <input type="text" placeholder="Digite seu nome" className="input-text" required />

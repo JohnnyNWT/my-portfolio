@@ -3,12 +3,43 @@ import dataSkills from '../data/Skills';
 import '../css/Skills.css';
 
 class Skills extends React.Component {
+  constructor(props) {
+    super(props);
+    this.skillsTitleRef = React.createRef();
+    this.skillsDivCardRef = React.createRef();
+    this.skillsDivExpListRef = React.createRef();
+  }
+
+  componentDidMount() {
+    const intersectionObserver = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if(entry.isIntersecting) {
+          entry.target.classList.add('show');
+        } else {
+          entry.target.classList.remove('show');
+        }
+      })
+    });
+    
+    if (this.skillsTitleRef.current) {
+      intersectionObserver.observe(this.skillsTitleRef.current);
+    }
+
+    if (this.skillsDivCardRef.current) {
+      intersectionObserver.observe(this.skillsDivCardRef.current);
+    }
+
+    if (this.skillsDivExpListRef.current) {
+      intersectionObserver.observe(this.skillsDivExpListRef.current);
+    }
+  }
+
   render() {
     return (
       <div className='container-skills' id='Skills'>
-        <h2 className='head-text'>Skills & Experiências</h2>
+        <h2 className='head-text hidden' ref={this.skillsTitleRef}>Skills & Experiências</h2>
         <div className="container-skills-exp">
-          <div className="all-cards">
+          <div className="all-cards hidden" ref={this.skillsDivCardRef}>
             {dataSkills.map(({ srcImage, skillName }) => (
               <div className="card-skill">
                 <div className="skill-image">
@@ -18,7 +49,7 @@ class Skills extends React.Component {
               </div>
             ))}
           </div>
-          <div className="exp-list">
+          <div className="exp-list hidden" ref={this.skillsDivExpListRef}>
             <div className="container-exp">
               <div className="exp-year">
                 <p className="p-exp-year">2020/2023</p>
