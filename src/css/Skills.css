@@ -1,6 +1,6 @@
 .container-skills {
   background-color: #FCF7F8;
-  height: 100vh;
+  height: auto;
 }
 
 .all-cards {
@@ -63,4 +63,39 @@
   font-family: "Poppins", sans-serif;
   font-weight: 600;
   color: #030303;
+}
+
+@media (max-width: 1024px) {
+  .all-cards {
+    grid-template-columns: repeat(2, 115px);
+    margin-left: 100px;
+  }
+  .container-skills-exp {
+    justify-content: space-between;
+  }
+  .container-skills-info {
+    width: 310px;
+  }
+}
+
+@media (max-width: 768px){
+  .container-skills-exp {
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+  }
+  .all-cards {
+    grid-template-columns: repeat(4, 120px);
+    margin: 0 auto;
+  }
+  .exp-list {
+    margin-bottom: 40px;
+  }
+}
+
+@media (max-width: 576px){
+  .all-cards {
+    grid-template-columns: repeat(3, 120px);
+    margin: 0 auto;
+  }
 }

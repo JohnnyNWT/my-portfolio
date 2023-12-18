@@ -70,6 +70,15 @@ class Skills extends React.Component {
             </div>
             <div className="container-exp">
               <div className="exp-year">
+                <p className="p-exp-year">2023/2024</p>
+              </div>
+              <div className="container-skills-info">
+                <h4 className="exp-text">UX / Design</h4>
+                <p className="p-text">Google</p>
+              </div>
+            </div>
+            <div className="container-exp">
+              <div className="exp-year">
                 <p className="p-exp-year">2022/2023</p>
               </div>
               <div className="container-skills-info">
