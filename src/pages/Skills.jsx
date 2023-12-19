@@ -49,7 +49,7 @@ class Skills extends React.Component {
               </div>
             ))}
           </div>
-          <div className="exp-list hidden" ref={this.skillsDivExpListRef}>
+          <div className="exp-list" ref={this.skillsDivExpListRef}>
             <div className="container-exp">
               <div className="exp-year">
                 <p className="p-exp-year">2020/2023</p>

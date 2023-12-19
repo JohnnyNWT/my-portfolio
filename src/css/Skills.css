@@ -90,6 +90,7 @@
   }
   .exp-list {
     margin-bottom: 40px;
+    /* width: 90vw; */
   }
 }
 
@@ -97,5 +98,8 @@
   .all-cards {
     grid-template-columns: repeat(3, 120px);
     margin: 0 auto;
+  }
+  .exp-list {
+    width: 90vw;
   }
 }
