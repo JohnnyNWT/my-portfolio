@@ -115,3 +115,26 @@ i {
 .space {
   margin-right: 7px;
 }
+
+@media (max-width: 1024px) {
+  .copyright {
+    bottom: -60px;
+    right: 40px;
+  }
+}
+@media (max-width: 768px) {
+  .copy-text {
+    font-size: .8rem;
+  }
+  .social {
+    display: none;
+  }
+}
+@media (max-width: 576px) {
+  form {
+    width: 80vw;
+  }
+  .h2-text {
+    font-size: 2.50rem;
+  }
+}

@@ -35,9 +35,9 @@ class Home extends React.Component {
       <div id='Home' className="container-home">
         <img src={ minhaImgIA } alt="Joao Marcelo IA" className="img-home hidden" ref={this.homeImgRef}/>
         <div className="container-info hidden" ref={this.homeDivRef}>
-          <h1>Olá, eu sou o</h1>
-          <h1>João Marcelo</h1>
-          <h2>Desenvolvedor web full-stack</h2>
+          <h1 className="text-home">Olá, eu sou o</h1>
+          <h1 className="text-home">João Marcelo</h1>
+          <h2 className="text-home">Desenvolvedor web full-stack</h2>
         </div>
       </div>
     );
