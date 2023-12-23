@@ -76,6 +76,10 @@
   box-shadow: 5px 5px rgba(0,0,0,.15);
 }
 
+.menu-social-icons {
+  display: none;
+}
+
 ::-webkit-scrollbar {
   width: 10px;
 }
@@ -93,6 +97,9 @@
     display: none;
   }
   .social-links{
+    display: none;
+  }
+  .menu-social-icons {
     display: none;
   }
 
@@ -122,10 +129,18 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    transition: .2s;
   }
 
-  .menu-section.on .nav-links {
+  .menu-section.on .nav-links{
     display: block;
+  }
+
+  .menu-section.on .menu-social-icons{
+    display: flex;
+    position: absolute;
+    bottom: 20px;
+    gap: 10px;
   }
 
   .menu-section.on .menu-toggle {
@@ -150,7 +165,6 @@
     text-align: center;
     display: block;
     color: white;
-
     transition-duration: 0.5s;
     font-size: 1.75rem;
     line-height: 4rem;

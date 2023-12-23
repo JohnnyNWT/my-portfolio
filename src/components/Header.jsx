@@ -10,7 +10,7 @@ class Header extends React.Component {
 
   handleClickMenuToggle = (event) => {
     const { show } = this.state;
-    // document.body.style.overflow = show ? "hidden" : "initial";
+    document.body.style.overflow = show ? "hidden" : "initial";
     event.currentTarget.parentNode.classList.toggle('on', show);
     this.setState({ show: !this.state.show });
   }
@@ -18,6 +18,7 @@ class Header extends React.Component {
   handleClickNavLink = (event) => {
     const { show } = this.state;
     if (!show) {
+      document.body.style.overflow = show ? "hidden" : "initial";
       event.currentTarget.parentNode.classList.remove('on', show);
       this.setState({ show: !this.state.show })
     }
@@ -42,7 +43,17 @@ class Header extends React.Component {
             <a href='#Skills' className="nav-link">SKILLS</a> 
             <a href='#Contact' className="nav-link">CONTATO</a>
           </div>
-
+        <div className="menu-social-icons">
+          <a href="https://www.linkedin.com/in/johnnydev/" target="_blank" className="social-icon">
+            <i className="bi bi-linkedin"></i>
+          </a>
+          <a href="https://github.com/JohnnyNWT" target="_blank" className="social-icon">
+            <i className="bi bi-github"></i>
+          </a>
+          <a href="https://www.instagram.com/johnnynwt/" target="_blank" className="social-icon">
+            <i className="bi bi-instagram"></i>
+          </a>
+        </div>
         </div>
         <div className="social-links">
           <a href="https://www.linkedin.com/in/johnnydev/" target="_blank" className="social-link">
