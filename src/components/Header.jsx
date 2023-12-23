@@ -4,17 +4,45 @@ import 'bootstrap-icons/font/bootstrap-icons.css';
 import '../css/Header.css';
 
 class Header extends React.Component {
+  state = {
+    show: true,
+  };
+
+  handleClickMenuToggle = (event) => {
+    const { show } = this.state;
+    // document.body.style.overflow = show ? "hidden" : "initial";
+    event.currentTarget.parentNode.classList.toggle('on', show);
+    this.setState({ show: !this.state.show });
+  }
+
+  handleClickNavLink = (event) => {
+    const { show } = this.state;
+    if (!show) {
+      event.currentTarget.parentNode.classList.remove('on', show);
+      this.setState({ show: !this.state.show })
+    }
+  }
+
   render() {
+
     return(
       <div className="container-principal">
         <a href='#Home'>
           <img src={ logo } alt="logo" className="img-logo" style={{ cursor: "pointer" }} />
         </a>
-        <div className="nav-links">
-          <a href='#Home' className="nav-link">HOME</a>
-          <a href='#Projects' className="nav-link">PROJETOS</a>
-          <a href='#Skills' className="nav-link">SKILLS</a> 
-          <a href='#Contact' className="nav-link">CONTATO</a>
+        <div className="menu-section">
+          <div onClick={ this.handleClickMenuToggle } className="menu-toggle">
+            <div className="one"></div>
+            <div className="two"></div>
+            <div className="three"></div>
+          </div>
+          <div onClick={ this.handleClickNavLink } className="nav-links">
+            <a href='#Home' className="nav-link">HOME</a>
+            <a href='#Projects' className="nav-link">PROJETOS</a>
+            <a href='#Skills' className="nav-link">SKILLS</a> 
+            <a href='#Contact' className="nav-link">CONTATO</a>
+          </div>
+
         </div>
         <div className="social-links">
           <a href="https://www.linkedin.com/in/johnnydev/" target="_blank" className="social-link">
