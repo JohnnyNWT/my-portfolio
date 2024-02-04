@@ -46,7 +46,7 @@ class Contact extends React.Component {
           </a> */}
         </div>
         <section className="hidden" ref={this.contactFormRef}>
-          <h2 className="h2-text">FALA <span className="span-my-projects">COMIGO.</span></h2>
+          <h2 className="h2-text">FALE <span className="span-my-projects">COMIGO.</span></h2>
           <form action="">
             <input type="text" placeholder="Digite seu nome" className="input-text" required />
             <input type="text" placeholder="Digite seu email" className="input-text" required />
