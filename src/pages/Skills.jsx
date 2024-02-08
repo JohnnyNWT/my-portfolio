@@ -1,13 +1,13 @@
-import React from 'react';
+import React, { Component, createRef } from 'react';
 import dataSkills from '../data/Skills';
 import '../css/Skills.css';
 
-class Skills extends React.Component {
+class Skills extends Component {
   constructor(props) {
     super(props);
-    this.skillsTitleRef = React.createRef();
-    this.skillsDivCardRef = React.createRef();
-    this.skillsDivExpListRef = React.createRef();
+    this.skillsTitleRef = createRef();
+    this.skillsDivCardRef = createRef();
+    this.skillsDivExpListRef = createRef();
   }
 
   componentDidMount() {
@@ -37,7 +37,7 @@ class Skills extends React.Component {
   render() {
     return (
       <div className='container-skills' id='Skills'>
-        <h2 className='head-text hidden' ref={this.skillsTitleRef}>Skills & Experiências</h2>
+        <h2 className='head-text hidden-text' ref={this.skillsTitleRef}>Skills & Experiências</h2>
         <div className="container-skills-exp">
           <div className="all-cards hidden" ref={this.skillsDivCardRef}>
             {dataSkills.map(({ srcImage, skillName }) => (
@@ -49,7 +49,7 @@ class Skills extends React.Component {
               </div>
             ))}
           </div>
-          <div className="exp-list" ref={this.skillsDivExpListRef}>
+          <div className="exp-list hidden" ref={this.skillsDivExpListRef}>
             <div className="container-exp">
               <div className="exp-year">
                 <p className="p-exp-year">2020/2023</p>

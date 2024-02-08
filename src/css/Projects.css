@@ -13,6 +13,13 @@
   transition: all 1.5s;
 }
 
+.hidden-text {
+  opacity: 0;
+  filter: blur(15px);
+  transform: translateY(100%);
+  transition: all 1.5s;
+}
+
 .card-project-hidden {
   opacity: 0;
   filter: blur(15px);

@@ -35,8 +35,8 @@ class Projects extends React.Component {
   render() {
     return(
       <div id='Projects' className='container-projects'>
-        <h2 ref={this.projectTitleRef} className="head-text hidden">Alguns dos <span className="span-my-projects">meus projetos</span><br/> como dev</h2>
-        <div ref={this.projectCardRef} className="cards-container hidden">
+        <h2 ref={this.projectTitleRef} className="head-text hidden-text">Alguns dos <span className="span-my-projects">meus projetos</span><br/> como dev</h2>
+        <div ref={this.projectCardRef} className="cards-container card-project-hidden">
           {dataProjects.map(({srcImage, projectName, projectDescription, linkGitHubProject, linkViewProject}) => (
             <div className="card">
               <div className="image-card">
