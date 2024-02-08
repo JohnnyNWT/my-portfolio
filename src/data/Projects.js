@@ -19,7 +19,7 @@ const dataProjects = [{
   srcImage: MenuOnline,
   projectName: "Menu Online",
   projectDescription: "O Menu Online é uma solução moderna e eficiente para transformar a experiência de pedidos em restaurantes e estabelecimentos de comida. Com o Menu Online, os clientes podem explorar facilmente o cardápio, selecionar os itens desejados e adicioná-los ao carrinho de compras de forma intuitiva",
-  linkViewProject: "https://menu-online-ivory.vercel.app/",
+  linkViewProject: "https://menu-online-zeta.vercel.app/",
 }, {
   srcImage: EmBreve,
   projectName: "EM BREVE",
