@@ -1,15 +1,15 @@
-import React from 'react';
+import React, { Component, createRef } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faEye } from '@fortawesome/free-solid-svg-icons';
 import { faGithub } from '@fortawesome/free-brands-svg-icons';
 import dataProjects from '../data/Projects';
 import '../css/Projects.css';
 
-class Projects extends React.Component {
+class Projects extends Component {
   constructor(props) {
     super(props);
-    this.projectCardRef = React.createRef();
-    this.projectTitleRef = React.createRef();
+    this.projectTitleRef = createRef();
+    this.projectCardRefs = Array.from({ length: dataProjects.length }, (_, i) => createRef());
   }
 
   componentDidMount() {
@@ -22,23 +22,25 @@ class Projects extends React.Component {
         }
       })
     });
-
-    if (this.projectCardRef.current) {
-      intersectionObserver.observe(this.projectCardRef.current);
-    }
-
+    
     if (this.projectTitleRef.current) {
       intersectionObserver.observe(this.projectTitleRef.current);
     }
+
+    this.projectCardRefs.forEach((ref, _index) => {
+      if (ref.current) {
+        intersectionObserver.observe(ref.current);
+      }
+    });
   }
   
   render() {
     return(
       <div id='Projects' className='container-projects'>
         <h2 ref={this.projectTitleRef} className="head-text hidden-text">Alguns dos <span className="span-my-projects">meus projetos</span><br/> como dev</h2>
-        <div ref={this.projectCardRef} className="cards-container card-project-hidden">
-          {dataProjects.map(({srcImage, projectName, projectDescription, linkGitHubProject, linkViewProject}) => (
-            <div className="card">
+        <div className="cards-container">
+          {dataProjects.map(({srcImage, projectName, projectDescription, linkGitHubProject, linkViewProject}, index) => (
+            <div ref={this.projectCardRefs[index]} className="card card-project-hidden">
               <div className="image-card">
                 <img src={ srcImage } alt='imagemfa' className="img-project" style={{ width: "100%", height: "260px" }} />
                 <div className="icons">
