@@ -97,7 +97,7 @@
   border-radius: 8px;
   cursor: pointer;
   transition: 0.5s ease;
-  z-index: 999;
+  z-index: 1;
 }
 
 .iconTop i {
@@ -204,28 +204,29 @@
   }
 
   .text-home {
-    font-size: 1rem;
+    font-size: 1.25rem;
   }
 
   .text-home2 {
-    font-size: 1.30rem;
+    font-size: 1.40rem;
   }
 
   .highlights {
-    font-size: 1.30rem;
+    font-size: 1.50rem;
   }
 
   .paragraph {
-    font-size: .75rem;
+    display: none;
   }
 
   .home-info {
-    width: 380px;
-    /* border: 1px solid blue; */
+    width: 90vw;
+    margin-bottom: 10px;
   }
 
   .container-home {
-    padding-top: 7rem;
-    padding-bottom: 300px;
+    padding-top: 10vh;
+    height: 900px;
+    gap: 11rem;
   }
 }
