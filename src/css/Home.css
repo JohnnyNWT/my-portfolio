@@ -200,22 +200,32 @@
 
 @media (max-width: 576px){
   .img-home {
-    width: 80vw;
+    width: 100vw; 
   }
 
   .text-home {
-    font-size: 1.15rem;
+    font-size: 1rem;
   }
 
   .text-home2 {
-    font-size: 1.65rem;
+    font-size: 1.30rem;
   }
 
   .highlights {
-    font-size: 1.70rem;
+    font-size: 1.30rem;
+  }
+
+  .paragraph {
+    font-size: .75rem;
   }
 
   .home-info {
-    width: 430px;
+    width: 380px;
+    /* border: 1px solid blue; */
+  }
+
+  .container-home {
+    padding-top: 7rem;
+    padding-bottom: 300px;
   }
 }
