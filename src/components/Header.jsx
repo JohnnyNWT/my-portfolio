@@ -50,8 +50,8 @@ class Header extends React.Component {
           <a href="https://github.com/JohnnyNWT" target="_blank" className="social-icon">
             <i className="bi bi-github"></i>
           </a>
-          <a href="https://www.instagram.com/johnnynwt/" target="_blank" className="social-icon">
-            <i className="bi bi-instagram"></i>
+          <a href="https://wa.me/message/4ZDWT75CEC5XB1" target="_blank" className="social-icon">
+          <i class="bi bi-whatsapp"></i>
           </a>
         </div>
         </div>
@@ -59,11 +59,11 @@ class Header extends React.Component {
           <a href="https://www.linkedin.com/in/johnnydev/" target="_blank" className="social-link">
             <i className="bi bi-linkedin"></i>
           </a>
-          <a href="https://www.instagram.com/johnnynwt/" target="_blank" className="social-link">
-            <i className="bi bi-instagram"></i>
-          </a>
           <a href="https://github.com/JohnnyNWT" target="_blank" className="social-link">
             <i className="bi bi-github"></i>
+          </a>
+          <a href="https://wa.me/message/4ZDWT75CEC5XB1" target="_blank" className="social-link">
+            <i class="bi bi-whatsapp"></i>
           </a>
         </div>
       </div>
