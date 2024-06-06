@@ -46,7 +46,7 @@ class Home extends React.Component {
               1500,
               'Freelancer!',
               1500,
-              'Analista de Dados!',
+              'Analista de Dados! ',
               1500
             ]}
             className="highlights"
