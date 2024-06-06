@@ -74,7 +74,7 @@ class Home extends React.Component {
         </div>
         <a href="#Home">
           <div className="iconTop">
-            <i class="bi bi-arrow-up"></i>
+            <i className="bi bi-arrow-up"></i>
           </div>
         </a>
         </div>

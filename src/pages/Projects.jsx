@@ -40,7 +40,7 @@ class Projects extends Component {
         <h2 ref={this.projectTitleRef} className="head-text hidden-text">Alguns dos <span className="span-my-projects">meus projetos</span><br/> como dev</h2>
         <div className="cards-container">
           {dataProjects.map(({srcImage, projectName, projectDescription, linkGitHubProject, linkViewProject}, index) => (
-            <div ref={this.projectCardRefs[index]} className="card card-project-hidden">
+            <div ref={this.projectCardRefs[index]} className="card card-project-hidden" key={index}>
               <div className="image-card">
                 <img src={ srcImage } alt='imagemfa' className="img-project" style={{ width: "100%", height: "260px" }} />
                 <div className="icons">

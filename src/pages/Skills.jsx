@@ -40,8 +40,8 @@ class Skills extends Component {
         <h2 className='head-text hidden-text' ref={this.skillsTitleRef}>Skills & Experiências</h2>
         <div className="container-skills-exp">
           <div className="all-cards hidden" ref={this.skillsDivCardRef}>
-            {dataSkills.map(({ srcImage, skillName }) => (
-              <div className="card-skill">
+            {dataSkills.map(({ srcImage, skillName }, i) => (
+              <div className="card-skill" key={i}>
                 <div className="skill-image">
                   <img src={ srcImage } alt='html5 icon' />
                 </div>

@@ -51,7 +51,7 @@ class Header extends React.Component {
             <i className="bi bi-github"></i>
           </a>
           <a href="https://wa.me/message/4ZDWT75CEC5XB1" target="_blank" className="social-icon">
-          <i class="bi bi-whatsapp"></i>
+          <i className="bi bi-whatsapp"></i>
           </a>
         </div>
         </div>
@@ -63,7 +63,7 @@ class Header extends React.Component {
             <i className="bi bi-github"></i>
           </a>
           <a href="https://wa.me/message/4ZDWT75CEC5XB1" target="_blank" className="social-link">
-            <i class="bi bi-whatsapp"></i>
+            <i className="bi bi-whatsapp"></i>
           </a>
         </div>
       </div>
