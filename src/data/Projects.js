@@ -1,6 +1,5 @@
 import RecipesAPP from '../images/recipes-app-icon.png';
 import TrybeTunes from '../images/trybetunes-icon.png';
-import EmBreve from '../images/em-breve-icon.png';
 import MenuOnline from '../images/menu-online-icon.png';
 import LeoPremios from '../images/leo-premios-icon.png';
 
