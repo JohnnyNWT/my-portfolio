@@ -53,6 +53,9 @@ class Header extends React.Component {
           <a href="https://wa.me/message/4ZDWT75CEC5XB1" target="_blank" className="social-icon">
           <i className="bi bi-whatsapp"></i>
           </a>
+          <a href="https://www.instagram.com/johnnydevdesigner/" target="_blank" className="social-icon">
+          <i className="bi bi-instagram"></i>
+          </a>
         </div>
         </div>
         <div className="social-links">
@@ -64,6 +67,9 @@ class Header extends React.Component {
           </a>
           <a href="https://wa.me/message/4ZDWT75CEC5XB1" target="_blank" className="social-link">
             <i className="bi bi-whatsapp"></i>
+          </a>
+          <a href="https://www.instagram.com/johnnydevdesigner/" target="_blank" className="social-link">
+            <i className="bi bi-instagram"></i>
           </a>
         </div>
       </div>
