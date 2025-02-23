@@ -41,6 +41,9 @@ class Contact extends React.Component {
         <a href="https://wa.me/message/4ZDWT75CEC5XB1" target="_blank" className="social-icon">
           <i className="bi bi-whatsapp"></i>
         </a>
+        <a href="https://www.instagram.com/johnnydevdesigner/" target="_blank" className="social-icon">
+          <i className="bi bi-instagram"></i>
+        </a>
         </div>
         <section className="hidden" ref={this.contactFormRef}>
           <h2 className="h2-text">FALE <span className="span-my-projects">COMIGO.</span></h2>
